@@ -1,8 +1,5 @@
 import math
 
-n1 = float(input("Digite o primeiro número: "))
-n2 = float(input("Digite o segundo número: "))
-
 print("\n\n[1] Soma")
 print("\n[2] Subtração")
 print("\n[3] Multiplicação")
@@ -15,6 +12,10 @@ print("\n[9] Cosseno (apenas o primeiro número)")
 print("\n[10] Tangente (apenas o primeiro numero)")
 print("\n[11] Logaritmo")
 operacao = input("\nEscolha a operação: ")
+
+n1 = float(input("Digite um número: "))
+if operacao != '6' and operacao != '8' and operacao != '9' and operacao != '10':
+  n2 = float(input("Digite o segundo número: "))  
 
 if operacao == '1':
   result = n1 + n2
