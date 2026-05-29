@@ -12,6 +12,7 @@ print("\n[6] Raiz quadrada (apenas o primeiro número)")
 print("\n[7] Porcentagem")
 print("\n[8] Seno (apenas o primeiro número)")
 print("\n[9] Cosseno (apenas o primeiro número)")
+print("\n[10] Tangente (apenas o primeiro numero)")
 operacao = input("\nEscolha a operação: ")
 
 if operacao == '1':
@@ -51,6 +52,10 @@ elif operacao == '8':
 elif operacao == '9':
   result = math.cos(math.radians(n1))
   print(f"Cos({n1}) = {result}")
+  
+elif operacao == '10':
+  result = math.tan(math.radians(n1))
+  print(f"Tan({n1}) = {result}")
   
 else:
   print("Operação inválida!")
