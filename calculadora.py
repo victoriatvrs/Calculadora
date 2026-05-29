@@ -13,6 +13,7 @@ print("\n[7] Porcentagem")
 print("\n[8] Seno (apenas o primeiro número)")
 print("\n[9] Cosseno (apenas o primeiro número)")
 print("\n[10] Tangente (apenas o primeiro numero)")
+print("\n[11] Logaritmo")
 operacao = input("\nEscolha a operação: ")
 
 if operacao == '1':
@@ -56,6 +57,10 @@ elif operacao == '9':
 elif operacao == '10':
   result = math.tan(math.radians(n1))
   print(f"Tan({n1}) = {result}")
+  
+elif operacao == '11':
+  result = math.log(n1, n2)
+  print(f"Log de {n1} na base {n2} = {result}")
   
 else:
   print("Operação inválida!")
