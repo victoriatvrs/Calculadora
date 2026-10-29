@@ -1,4 +1,4 @@
-# Calculadora — Projeto LP2026
+# Calculadora
 
 Repositório dedicado ao desenvolvimento de uma calculadora em Python para terminal, com operações aritméticas básicas e funções matemáticas (potência, raiz quadrada, porcentagem, trigonometria e logaritmo), reunidas em um único script.
 
@@ -9,7 +9,7 @@ Repositório dedicado ao desenvolvimento de uma calculadora em Python para termi
 - **Modo de Uso:** Execução única — o usuário escolhe a operação, informa o(s) número(s) e recebe o resultado no terminal
 - **Persistência:** Não possui (nenhum dado é salvo entre execuções)
 - **Arquitetura:** Script único (`calculadora.py`), sem divisão em módulos
-- **Autores:** [preencher com os nomes dos autores]
+- **Autores:** Victoria Tavares
 
 ---
 
