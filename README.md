@@ -1,34 +1,83 @@
-## Calculadora Científica em Python
-#### Uma calculadora completa executada diretamente pelo terminal, desenvolvida em Python. O projeto conta com um menu interativo onde o usuário escolhe a operação desejada e insere os valores necessários para obter o resultado instantaneamente.
+# Calculadora — Projeto LP2026
 
-## Descrição do Projeto
-#### Este projeto foi desenvolvido com o objetivo de aplicar conceitos fundamentais da linguagem Python, como estruturas de repetição (while), estruturas condicionais (if/elif/else), funções (def) e a utilização da biblioteca nativa math. 
-#### A aplicação foi desenhada para ser intuitiva e robusta, tratando de forma inteligente operações que utilizam apenas um operando e operações que exigem dois operandos, evitando perguntas desnecessárias ao usuário durante a execução.
+Repositório dedicado ao desenvolvimento de uma calculadora em Python para terminal, com operações aritméticas básicas e funções matemáticas (potência, raiz quadrada, porcentagem, trigonometria e logaritmo), reunidas em um único script.
 
-## Funcionalidades
-#### A calculadora oferece 11 operações organizadas em um menu interativo:
-#### * Soma: Adiciona dois valores.
-#### * Subtração: Subtrai o segundo valor do primeiro.
-#### * Multiplicação: Multiplica dois valores.
-#### * Divisão: Divide o primeiro valor pelo segundo (com validação para evitar divisão por zero).
-#### * Potência: Eleva um número base a um determinado expoente.
-#### * Porcentagem: Calcula o valor percentual de um número em relação a outro.
-#### * Raiz Quadrada: Calcula a raiz quadrada do número digitado.
-#### * Seno: Calcula o seno do ângulo digitado (convertido para radianos).
-#### * Cosseno: Calcula o cosseno do ângulo digitado (convertido para radianos).
-#### * Tangente: Calcula a tangente do ângulo digitado (convertido para radianos).
-#### * Logaritmo: Calcula o logaritmo do número digitado.
+---
 
-## Tecnologias Utilizadas
-#### * Python 3.x
-#### * Biblioteca math (nativa do Python, utilizada para os cálculos de raiz, logaritmo e trigonometria)
+## Visão Geral
 
-## Como Executar o Projeto
-#### Para executar a calculadora, você precisa ter o Python 3 instalado em sua máquina. 
-#### 1. Baixe ou clone este repositório em sua máquina.
-#### 2. Abra o terminal ou prompt de comando na pasta do projeto.
-#### 3. Digite o comando: python calculadora.py (ou o nome exato do seu arquivo .py) e pressione Enter.
+- **Modo de Uso:** Execução única — o usuário escolhe a operação, informa o(s) número(s) e recebe o resultado no terminal
+- **Persistência:** Não possui (nenhum dado é salvo entre execuções)
+- **Arquitetura:** Script único (`calculadora.py`), sem divisão em módulos
+- **Autores:** [preencher com os nomes dos autores]
 
-## Funcionamento do Código
-#### Ao iniciar o programa, o menu com todas as opções é exibido na tela. O usuário digita o número correspondente à operação que deseja realizar. 
-#### Se a operação escolhida for uma das científicas (como Raiz Quadrada ou Seno), o programa solicita apenas um número. Se for uma das operações básicas (como Soma ou Divisão), o programa solicita o primeiro e o segundo número. Após exibir o resultado, o menu é mostrado novamente até que o usuário escolha a opção de sair.
+---
+
+## Tecnologias e Ferramentas
+
+- **Python 3**
+- **Módulo `math`** (biblioteca padrão do Python)
+- **Git & GitHub** (Versionamento e controle de versões)
+
+---
+
+## Estrutura do Repositório
+
+```text
+├── calculadora.py    # Script único: menu, leitura de dados, cálculos e saída
+└── README.md         # Documentação do projeto
+```
+
+## Como Executar
+Certifique-se de ter o Python 3 instalado no sistema.
+
+Clone o repositório:
+
+```Bash
+git clone https://github.com/victoriatvrs/Calculadora.git
+cd Calculadora
+```
+
+Execute o programa:
+- No Linux / macOS:
+```Bash
+python3 calculadora.py
+```
+
+- No Windows:
+```Bash
+python calculadora.py
+```
+
+## Funcionalidades e Menu
+Menu Principal
+
+1. Soma: `n1 + n2`
+
+2. Subtração: `n1 - n2`
+
+3. Multiplicação: `n1 * n2`
+
+4. Divisão: `n1 / n2`
+
+5. Potência: `n1` elevado a `n2`
+
+6. Raiz quadrada: raiz quadrada de `n1` (pede apenas um número)
+
+7. Porcentagem: `n1`% de `n2`
+
+8. Seno: seno de `n1` (pede apenas um número; ângulo em graus)
+
+9. Cosseno: cosseno de `n1` (pede apenas um número; ângulo em graus)
+
+10. Tangente: tangente de `n1` (pede apenas um número; ângulo em graus)
+
+11. Logaritmo: logaritmo de `n1` na base `n2`
+
+## Validações e Tratamento de Erros
+O programa trata automaticamente os casos em que a operação não pode ser realizada:
+
+- **Divisão:** informa que é impossível dividir por 0.
+- **Raiz quadrada:** informa que a raiz não existe no conjunto dos reais quando o número é negativo.
+- **Logaritmo:** informa que é impossível quando o logaritmando ou a base são menores ou iguais a 0, ou quando a base é igual a 1.
+- **Operação inválida:** exibe aviso caso a opção escolhida não esteja no menu.
